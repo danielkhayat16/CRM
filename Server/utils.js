@@ -5,6 +5,7 @@ exports.googleAuth = function () {
   const { authenticate } = require("@google-cloud/local-auth");
   const { google } = require("googleapis");
 
+  
   const SCOPES = "https://www.googleapis.com/auth/calendar";
 
   const TOKEN_PATH = path.join(process.cwd(), "token.json");
